@@ -15,24 +15,24 @@ class rect
 	{
 	    for(int j=0; j<c; j++)
 	     {
-	         if (i == 0 && j == 0 || i == 0 && j == c-1 || i == r-1 && j == 0 || i == r-1 && j == c-1)
-                              System.out.print("+");
+	        if (i == 0 && j == 0 || i == 0 && j == c-1 || i == r-1 && j == 0 || i == r-1 && j == c-1)
+                    System.out.print("+");
 	        else if (i == 0 || i == r-1)
 	            System.out.print("-");
-                          else if (j == 0 || j == c-1)
+                else if (j == 0 || j == c-1)
 	            System.out.print("|");
-                          else if (i == r-3 && j == c - (a+2))
+                else if (i == r-3 && j == c - (a+2))
 	          {
 	             System.out.print(name);
 	             j += a-1;
 	          }
 	        else
-                           {
+                 {
 	            System.out.print(" ");
 	         }
 	      }
 	System.out.println( );
-                  }
+         }
    }
 }
 	
